@@ -120,4 +120,3 @@ rsn_pairwise=CCMP
 iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE  
 iptables -A FORWARD -i wlan0 -o $interface -m state --state RELATED,ESTABLISHED -j ACCEPT  
 iptables -A FORWARD -i $interface -o wlan0 -j ACCEPT
-fi
