@@ -9,7 +9,10 @@
 sudo chmod +x ./install.sh
 ```
 
-3. Run script as sudo with sudo ./install.sh
+3. Run script as sudo with
+```bash
+sudo ./install.sh
+```
 
 4. Follow the prompts!
 
