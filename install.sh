@@ -38,11 +38,10 @@ apt-get update && apt-get dist-upgrade -y && apt-get install dnsmasq hostapd -y
 
 echo "Use a valid interface from the output below..."
 ifconfig -a | grep -m10 -o "^\w*\b"
+
 echo "\n\nWhich interface are we using today?"
 read interface
 echo "\nTaking $interface down now..."
-
-exit
 
 echo 'Type the name of the listen address you wish to use [192.168.2.1]:'
 read listenAddress
