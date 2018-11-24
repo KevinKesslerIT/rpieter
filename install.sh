@@ -23,13 +23,24 @@ else
     exit
 fi
 
+echo "You'll need to enable predictable network interfaces next.
+Go to option 2, then N3 and enable that. Enter 'c' when ready. [c]"
+read cont
+
+if [ $cont = "c" -o $cont = "C"]; then
+	raspi-config
+else
+	exit
+fi
+
+
 apt-get update && apt-get dist-upgrade -y && apt-get install dnsmasq hostapd -y
-echo "Enabling predictable network interfaces...\n"
-echo "Use a valid interface from the output below...\n"
-ip a | grep wlx
+
+echo "Use a valid interface from the output below..."
+ifconfig -a | grep -m10 -o "^\w*\b"
 echo "\n\nWhich interface are we using today?"
 read interface
-echo "\nTaking $interface down now...\n"
+echo "\nTaking $interface down now..."
 
 exit
 
