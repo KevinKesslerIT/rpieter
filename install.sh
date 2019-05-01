@@ -19,7 +19,7 @@ fi
 wget -q --spider http://google.com
 if [ $? -eq 0 ]; then
 else
-    echo 'Please conenct to the internet and try again.'
+    echo 'Please connect to the internet and try again.'
     exit
 fi
 
