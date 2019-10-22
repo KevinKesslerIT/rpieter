@@ -2,7 +2,7 @@
 ## How to install
 
 1. Download the script.
-`wget https://github.com/KevinKesslerIT/rpieter/blob/master/install.sh`
+`wget https://github.com/metaglyph/rpieter/blob/master/install.sh`
 
 2. Make the script executable with
 ```bash 
