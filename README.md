@@ -1,8 +1,8 @@
-# RPIeter readme
+# RPI-Repeater readme
 ## How to install
 
 1. Download the script.
-`wget https://github.com/metaglyph/rpieter/blob/master/install.sh`
+`wget https://github.com/metaglyph/rpi-reater/blob/master/install.sh`
 
 2. Make the script executable with
 ```bash 
