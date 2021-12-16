@@ -1,3 +1,6 @@
+# Project is now archived due to better options.
+
+
 # RPI-Repeater readme
 ## How to install
 
