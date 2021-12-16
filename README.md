@@ -2,6 +2,7 @@
 ## How to install
 
 1. Download the script. Make sure you have Git installed. (`sudo apt install git`)
+
 `git clone https://github.com/kevinkesslerit/rpi-repeater.git`
 
 2. Change your current working directory
@@ -9,19 +10,14 @@
 cd rpi-repeater
 ```
 
-3. Make the script executable with
-```bash 
-sudo chmod +x install.sh
-```
-
-4. Run script as sudo with
+3. Run script as sudo with
 ```bash
 sudo ./install.sh
 ```
 
-5. Follow the prompts!
+4. Follow the prompts!
 
-6. Reboot to allow changes to take effect.
+5. Reboot to allow changes to take effect.
 
 
 `Disclaimers: Only tested with the RPI3 B/B+ (Linux unknown 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux)`
