@@ -20,7 +20,7 @@ wget -q --spider http://google.com
 if [ $? -eq 0 ]; then
 	echo 'Your connection appears to be working.'
 else
-    echo 'Please connect to the internet and try again.'
+    	echo 'Please connect to the internet and try again.'
     exit
 fi
 
@@ -28,7 +28,7 @@ echo "You'll need to enable predictable network interfaces next.
 Go to option 2, then N3 and enable that. Enter 'c' when ready. [c]"
 read cont
 
-if [ $cont = "c" -o $cont = "C"]; then
+if [ $cont = "c" -o $cont = "C" ]; then
 	raspi-config
 else
 	exit
