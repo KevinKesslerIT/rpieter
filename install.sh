@@ -18,6 +18,7 @@ fi
 
 wget -q --spider http://google.com
 if [ $? -eq 0 ]; then
+	echo 'Your connection appears to be working.'
 else
     echo 'Please connect to the internet and try again.'
     exit
