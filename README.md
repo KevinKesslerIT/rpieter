@@ -1,9 +1,11 @@
 # RPI-Repeater readme
 ## How to install
 
-1. Download the script. Make sure you have Git installed. (`sudo apt install git`)
+1. Download the script. Make sure you have Git installed. 
+```sudo apt update -y && sudo apt-get upgrade -y && sudo apt install git -y```
 
-`git clone https://github.com/kevinkesslerit/rpi-repeater.git`
+If you already have Git installed skip to here:
+```git clone https://github.com/kevinkesslerit/rpi-repeater.git```
 
 2. Change your current working directory
 ```bash 
